@@ -8,6 +8,21 @@ echo "If you get the math wrong you start over!!"
 
 sleep 2
 
+sleep 2
+
+echo "What is 1+1"
+
+read math
+
+if [[ 2 == $math ]]; then
+echo "Thats right"
+else
+echo "Wrong"
+exit 1
+fi
+
+sleep 2
+
 echo "What is 2+2"
 
 read math
