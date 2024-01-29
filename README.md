@@ -1,2 +1,2 @@
 # MATH3-Project-In-Progress
-This version of MATH is a work in progress version so feel free to test it.
+This version of MATH is a work in progress version so feel free to test it. Use the same stuff as MATH2
