@@ -1,26 +1,45 @@
 import * as readlineSync from 'readline-sync';
 
-console.log("Hello, What is your name?");
-const name = readlineSync.question('');
-
-console.log(`Hi ${name} thank you for getting MATH3. We hope you enjoy the new and improved MATH!!!`);
-console.log("If you get the math wrong you start over!!");
-
-// Question 1
-const math1 = parseInt(readlineSync.question('What is 1+1? '));
-if (math1 === 2) {
-  console.log("Thats right");
-} else {
-  console.log("Wrong");
-  process.exit(1);
+function getRandomNumber(): number {
+    return Math.floor(Math.random() * 10);
 }
 
-// Question 2
-const math2 = parseInt(readlineSync.question('What is 2+2? '));
-if (math2 === 4) {
-  console.log("Thats right");
-  // Continue with other questions...
-} else {
-  console.log("Wrong");
-  process.exit(1);
+function getRandomOperator(): string {
+    const operators: string[] = ['+', '-', '*', '/'];
+    return operators[Math.floor(Math.random() * operators.length)];
 }
+
+function askQuestion(): boolean {
+    const num1 = getRandomNumber();
+    const num2 = getRandomNumber();
+    const operator = getRandomOperator();
+    const result = eval(`${num1} ${operator} ${num2}`);
+
+    console.log(`What is ${num1} ${operator} ${num2}?`);
+    const answer = parseInt(readlineSync.question('> '));
+
+    if (answer === result) {
+        console.log('Thats right');
+        return true;  // Correct
+    } else {
+        console.log('Wrong');
+        return false;  // Incorrect
+    }
+}
+
+function startQuiz() {
+    console.log('Hello, What is your name?');
+    const name = readlineSync.question('> ');
+
+    console.log(`Hi ${name} thank you for getting MATH3. We hope you enjoy the new and improved MATH!!!`);
+    console.log('If you get the math wrong you start over!!');
+
+    // Continue asking questions until the user provides an incorrect answer
+    while (askQuestion()) {
+        // Continue with other questions...
+    }
+
+    console.log('Oops! You provided an incorrect answer. Better luck next time!');
+}
+
+startQuiz();
