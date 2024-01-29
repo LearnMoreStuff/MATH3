@@ -13,14 +13,11 @@ sleep 1
 
 sleep 1
 
-$ echo $((1 + $RANDOM % 10))
-3
-
-echo "What is "
+echo "What is $RANDOM"
 
 read math
 
-if [[ 2 == $math ]]; then
+if [[ $RANDOM == $RAMDOM ]]; then
 echo "Thats right"
 else
 echo "Wrong"
