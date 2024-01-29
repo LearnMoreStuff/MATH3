@@ -120,3 +120,13 @@ echo "Thats right"
 else
 echo "Wrong"
 fi
+
+echo "What is "
+
+read math
+
+if [[ 20 == $math ]]; then
+echo "Thats right"
+else
+echo "Wrong"
+fi
