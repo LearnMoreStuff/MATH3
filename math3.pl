@@ -3,6 +3,33 @@
 use strict;
 use warnings;
 
+sub ask_question {
+    my ($prompt, $correct_answer) = @_;
+
+    print $prompt;
+    my $answer = <STDIN>;
+    chomp($answer);
+
+    if ($answer == $correct_answer) {
+        print "Thats right\n";
+        return 1;  # Correct
+    } else {
+        print "Wrong\n";
+        return 0;  # Incorrect
+    }
+}
+
+sub shuffle_array {
+    my @array = @_;
+
+    for (my $i = $#array; $i > 0; $i--) {
+        my $j = int(rand($i + 1));
+        @array[$i, $j] = @array[$j, $i];
+    }
+
+    return @array;
+}
+
 print "Hello, What is your name? ";
 my $name = <STDIN>;
 chomp($name);
@@ -13,27 +40,21 @@ sleep(1);
 print "If you get the math wrong you start over!!\n";
 sleep(1);
 
-print "What is 1+1? ";
-my $math = <STDIN>;
-chomp($math);
+# Define the questions and answers
+my @questions = (
+    { prompt => "What is 1+1? ", answer => 2 },
+    { prompt => "What is 2+2? ", answer => 4 },
+    { prompt => "What is 3+3? ", answer => 6 },
+    # Add more questions as needed
+);
 
-if ($math == 2) {
-    print "Thats right\n";
-} else {
-    print "Wrong\n";
-    exit 1;
+# Shuffle the questions
+@questions = shuffle_array(@questions);
+
+# Ask each question in a random order
+foreach my $q (@questions) {
+    last unless ask_question($q->{prompt}, $q->{answer});
+    sleep(2);  # Pause between questions
 }
 
-sleep(2);
-
-print "What is 2+2? ";
-$math = <STDIN>;
-chomp($math);
-
-if ($math == 4) {
-    print "Thats right\n";
-    # Continue with other questions...
-} else {
-    print "Wrong\n";
-    exit 1;
-}
+print "Congratulations! You've completed the math quiz!\n";
