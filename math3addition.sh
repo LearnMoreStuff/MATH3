@@ -1,7 +1,8 @@
 #!/bin/bash
 
-name=$1
-RANDOM=$2
+echo "Hello, What is your name?"
+
+read name
 
 echo "Hi $name thank you for getting MATH3 we hope you enjoy the new and improved MATH!!!"
 
@@ -13,11 +14,11 @@ sleep 1
 
 sleep 1
 
-echo "What is $RANDOM"
+echo "What is 1+1"
 
-read $RANDOM
+read math
 
-if [[ $RANDOM == $RAMDOM ]]; then
+if [[ 2 == $math ]]; then
 echo "Thats right"
 else
 echo "Wrong"
