@@ -4,13 +4,26 @@ use strict;
 use warnings;
 
 sub ask_question {
-    my ($prompt, $correct_answer) = @_;
+    my ($num1, $num2, $operator) = @_;
 
+    my $prompt = "What is $num1 $operator $num2? ";
     print $prompt;
+
     my $answer = <STDIN>;
     chomp($answer);
 
-    if ($answer == $correct_answer) {
+    my $result;
+    if ($operator eq '+') {
+        $result = $num1 + $num2;
+    } elsif ($operator eq '-') {
+        $result = $num1 - $num2;
+    } elsif ($operator eq '*') {
+        $result = $num1 * $num2;
+    } elsif ($operator eq '/') {
+        $result = $num1 / $num2;
+    }
+
+    if ($answer == $result) {
         print "Thats right\n";
         return 1;  # Correct
     } else {
@@ -40,21 +53,17 @@ sleep(1);
 print "If you get the math wrong you start over!!\n";
 sleep(1);
 
-# Define the questions and answers
-my @questions = (
-    { prompt => "What is 1+1? ", answer => 2 },
-    { prompt => "What is 2+2? ", answer => 4 },
-    { prompt => "What is 3+3? ", answer => 6 },
-    # Add more questions as needed
-);
+my @operators = ('+', '-', '*', '/');
 
-# Shuffle the questions
-@questions = shuffle_array(@questions);
+# Continue asking questions until the user provides an incorrect answer
+while (1) {
+    my $num1 = int(rand(10));
+    my $num2 = int(rand(10));
+    my $operator = $operators[int(rand(@operators))];
 
-# Ask each question in a random order
-foreach my $q (@questions) {
-    last unless ask_question($q->{prompt}, $q->{answer});
+    last unless ask_question($num1, $num2, $operator);
+
     sleep(2);  # Pause between questions
 }
 
-print "Congratulations! You've completed the math quiz!\n";
+print "Oops! You provided an incorrect answer. Better luck next time!\n";
