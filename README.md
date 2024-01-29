@@ -1,2 +1,2 @@
 # MATH3-Project-In-Progress
-This version of MATH is a work in progress version so feel free to test it. Use the same stuff as MATH2
+This version of MATH is a work in progress version so feel free to test it. To run it type "git clone https://github.com/Clo612/MATH3-Project-In-Progress.git" (Without quotations) in your Linux terminal. Then type "cd MATH3-Project-In-Progress" (Without quotations) in your Linux terminal. Then type "chmod +x math3(the math type).sh" (Without quotations) in your Linux terminal. Then you type "./math3(the math type).sh" (Without quotations) in your Linux terminal. Finally Do Some math.
