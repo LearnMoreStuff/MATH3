@@ -12,10 +12,10 @@ func getRandomOperator() -> Character {
 func askQuestion() -> Bool {
     let num1 = getRandomNumber()
     let num2 = getRandomNumber()
-    let operation = getRandomOperator() // Changed variable name to 'operation'
+    let `operator` = getRandomOperator() // Use backticks to escape the reserved word
     let result: Int
 
-    switch operation {
+    switch `operator` {
     case "+":
         result = num1 + num2
     case "-":
@@ -28,7 +28,7 @@ func askQuestion() -> Bool {
         fatalError("Unexpected operator")
     }
 
-    print("What is \(num1) \(operation) \(num2)?")
+    print("What is \(num1) \(`operator`) \(num2)?")
     guard let answer = readLine(), let userAnswer = Int(answer) else {
         return false
     }
