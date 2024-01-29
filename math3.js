@@ -1,44 +1,58 @@
 const readline = require('readline');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+function getRandomNumber() {
+    return Math.floor(Math.random() * 10);
+}
 
-console.log("Hello, What is your name?");
+function getRandomOperator() {
+    const operators = ['+', '-', '*', '/'];
+    return operators[Math.floor(Math.random() * operators.length)];
+}
 
-rl.question("", function(name) {
-  console.log(`Hi ${name} thank you for getting MATH3. We hope you enjoy the new and improved MATH!!!`);
+function askQuestion() {
+    const num1 = getRandomNumber();
+    const num2 = getRandomNumber();
+    const operator = getRandomOperator();
+    const result = eval(`${num1} ${operator} ${num2}`);
 
-  setTimeout(function() {
-    console.log("If you get the math wrong you start over!!");
-    setTimeout(askQuestion, 1000);
-  }, 1000);
+    console.log(`What is ${num1} ${operator} ${num2}?`);
 
-  function askQuestion() {
-    rl.question("What is 1+1? ", function(math) {
-      if (parseInt(math) === 2) {
-        console.log("Thats right");
-        setTimeout(askQuestion2, 2000);
-      } else {
-        console.log("Wrong");
-        process.exit(1);
-      }
+    return new Promise(resolve => {
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+
+        rl.question('> ', answer => {
+            if (parseInt(answer) === result) {
+                console.log('Thats right');
+                resolve(true);  // Correct
+            } else {
+                console.log('Wrong');
+                resolve(false);  // Incorrect
+            }
+            rl.close();
+        });
     });
-  }
+}
 
-  function askQuestion2() {
-    rl.question("What is 2+2? ", function(math) {
-      if (parseInt(math) === 4) {
-        console.log("Thats right");
-        // Continue with other questions...
-        rl.close();
-      } else {
-        console.log("Wrong");
-        process.exit(1);
-      }
+async function startQuiz() {
+    console.log('Hello, What is your name?');
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
     });
-  }
 
-});
+    rl.question('> ', name => {
+        console.log(`Hi ${name} thank you for getting MATH3. We hope you enjoy the new and improved MATH!!!`);
+        setTimeout(async () => {
+            console.log('If you get the math wrong you start over!!');
+            await askQuestion();
+            rl.close();
+        }, 1000);
+    });
+}
+
+startQuiz();
+
 
