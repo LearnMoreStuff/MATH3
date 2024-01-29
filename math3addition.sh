@@ -1,16 +1,22 @@
 #!/bin/bash
 
-echo "Hi thank you for getting MATH3 we hope you enjoy the new and improved MATH!!!"
+name=$1
+RANDOM=$2
 
-sleep 2
+echo "Hi $name thank you for getting MATH3 we hope you enjoy the new and improved MATH!!!"
+
+sleep 1
 
 echo "If you get the math wrong you start over!!"
 
-sleep 2
+sleep 1
 
-sleep 2
+sleep 1
 
-echo "What is 1+1"
+$ echo $((1 + $RANDOM % 10))
+3
+
+echo "What is "
 
 read math
 
