@@ -15,7 +15,7 @@ sleep 1
 
 echo "What is $RANDOM"
 
-read math
+read $RANDOM
 
 if [[ $RANDOM == $RAMDOM ]]; then
 echo "Thats right"
