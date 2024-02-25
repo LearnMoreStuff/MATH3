@@ -100,3 +100,6 @@ You can adapt these steps based on your Linux distribution and the specifics of 
 ***Note: Not all the codes listed above are complete yet for our services.***
 
 # Realeses
+@settings {df
+  font-size: 100;
+}
