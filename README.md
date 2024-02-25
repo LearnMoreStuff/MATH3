@@ -100,6 +100,15 @@ You can adapt these steps based on your Linux distribution and the specifics of 
 ***Note: Not all the codes listed above are complete yet for our services.***
 
 # Realeses
-@settings {df
-  font-size: 100;
-}
+
+**HUGE REALESE: MATH4 HAS BEEN REALESED https://github.com/Clo612/MATH4**
+
+*Supported* Hakcell Realese MATH3 V1.0.4 https://github.com/Clo612/MATH3/releases/tag/Hakcell1
+
+*Supported* Perl Realese MATH3 V1.0.3 https://github.com/Clo612/MATH3/releases/tag/Perl
+
+*Supported* JS, TS, and Swift Fix Realese V1.0.2 https://github.com/Clo612/MATH3/releases/tag/Fix
+
+*Discontuied* Added JS, Swift, and Java Realese V1.0.1 https://github.com/Clo612/MATH3/releases/tag/New
+
+*Supported* Added TS Realese V1.0.0 https://github.com/Clo612/MATH3/releases/tag/REALES
