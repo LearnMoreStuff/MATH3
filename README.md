@@ -101,7 +101,7 @@ You can adapt these steps based on your Linux distribution and the specifics of 
 
 # Realeses
 
-*Supported* Bash Update MATH3 V1.0.5 https://github.com/Clo612/MATH3/releases/tag/D 
+*Discontuied* Bash Update MATH3 V1.0.5 https://github.com/Clo612/MATH3/releases/tag/D 
 
 **HUGE REALESE: MATH4 HAS BEEN REALESED https://github.com/Clo612/MATH4**
 
