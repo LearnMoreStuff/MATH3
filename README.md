@@ -1,4 +1,10 @@
 # MATH3-Project-In-Progress
+
+
+***This Repo is not supported anymore due to very little support and other projects.***
+
+
+
 This version of MATH is a work in progress version so feel free to test it. To run it type "git clone https://github.com/Clo612/MATH3-Project-In-Progress.git" (Without quotations) in your Linux terminal. Then type "cd MATH3-Project-In-Progress" (Without quotations) in your Linux terminal. Then type "chmod +x math3(the math type).sh" (Without quotations) in your Linux terminal. Then you type "./math3(the math type).sh" (Without quotations) in your Linux terminal. Finally Do Some math. Running code in multiple programming languages typically involves having the necessary interpreters, compilers, or runtime environments installed on your system. Here's a general guide on how you can run code in different languages on Linux:
 
 Bash:
