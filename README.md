@@ -1,7 +1,7 @@
 # MATH3-Project-In-Progress
 
 
-***This Repo is not supported anymore due to very little support and other projects.***
+***This Repo needs more support. Please Clone it or Download***
 
 
 
