@@ -18,8 +18,8 @@ question_number=0
 while (( question_number < 5 )); do
   clear
   echo "Question #$(($question_number + 1)):"
-  first_number=$(( RANDOM % 1000 ))  # Generate random numbers between 0 and 10 for simplicity
-  second_number=$(( RANDOM % 1000 ))
+  first_number=$(( RANDOM % 10000 ))  
+  second_number=$(( RANDOM % 10000 ))
   correct_answer=$(( first_number + second_number ))
   echo "What's $first_number + $second_number?"
 
