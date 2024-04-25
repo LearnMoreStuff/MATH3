@@ -1,5 +1,6 @@
 # MATH3-Project-In-Progress
 
+'We have just obtained the website math-project.com!'
 
 ***This Repo needs more support. Please Clone it or Download***
 
@@ -16,7 +17,6 @@ Run the script: ./math3.sh
 
 
 # Realeses
-
 *Discontuied* Update MATH3 V1.0.5.3 https://github.com/Clo612/MATH3/releases/tag/1.0.5.3
 
 *Supported* Bash Update MATH3 V1.0.5.2 https://github.com/Clo612/MATH3/releases/tag/1.0.5.2
