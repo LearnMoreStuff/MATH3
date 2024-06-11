@@ -17,6 +17,9 @@ Run the script: ./math3.sh
 
 
 # Realeses
+
+*Supported* Update MATH3 V1.0.5.4 https://github.com/Clo612/MATH3/releases/tag/V1.0.5.4
+
 *Discontuied* Update MATH3 V1.0.5.3 https://github.com/Clo612/MATH3/releases/tag/1.0.5.3
 
 *Supported* Bash Update MATH3 V1.0.5.2 https://github.com/Clo612/MATH3/releases/tag/1.0.5.2
