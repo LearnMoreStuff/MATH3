@@ -1,41 +1,36 @@
 #!/bin/bash
 
-echo "Welcome to the ultimate math addition challenge!"
-echo "Are you ready to test your knowledge? (y/n)"
-read -r answer
+# Number of questions
+QUESTIONS=5
+# Counter for correct answers
+CORRECT=0
 
-if [[ ! $answer =~ ^[Yy]$ ]]; then
-  echo "It is Required to Contiue."
-fi
+echo "Welcome to the MATH3!"
+echo "You will be asked $QUESTIONS addition questions with single-digit numbers."
 
-echo "Excellent! You will be playing addition."
-# Will add more levels including Subtraction, Algebra, Multiplication, and Divison.
+# Loop for each question
+for ((i=1; i<=QUESTIONS; i++))
+do
+    # Generate two random single-digit numbers (0-9)
+    num1=$(( RANDOM % 10 ))
+    num2=$(( RANDOM % 10 ))
 
-score=0
-question_number=0
+    # Calculate the correct answer
+    correct_answer=$(( num1 + num2 ))
 
-while (( question_number < 5 )); do
-  clear
-  echo "Question #$(($question_number + 1)):"
-  first_number=$(( RANDOM % 100 ))  
-  second_number=$(( RANDOM % 100 ))
-  correct_answer=$(( first_number + second_number ))
-  echo "What's $first_number + $second_number?"
+    # Ask the question
+    echo -n "Question $i: What is $num1 + $num2? "
+    read user_answer
 
-  read -p "Your answer: " user_answer
-  check_answer $user_answer $correct_answer
+    # Check the user's answer
+    if [ "$user_answer" -eq "$correct_answer" ]; then
+        echo "Correct!"
+        (( CORRECT++ ))
+    else
+        echo "Incorrect. The correct answer is $correct_answer."
+    fi
+done
 
-check_answer() {
-  local user_answer=$1
-  local correct_answer=$2
-
-  if [[ $user_answer -eq $correct_answer ]]; then
-    echo "Good job! That's correct."
-    ((score++))
-  else
-    echo "Oops! The correct answer is $correct_answer."
-  fi
-}
-
-echo "Your final score is $score out of 5. Well done!"
-
+# Display the final score
+echo "Quiz complete! You got $CORRECT out of $QUESTIONS correct."
+echo "Thank you for playing MATH3!"
