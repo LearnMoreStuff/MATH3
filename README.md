@@ -8,6 +8,26 @@ We have just obtained the website [math-project.com](http://math-project.com)!
 
 ---
 
+## Install
+
+No installation is required as **Bash** is the default shell on most Linux systems.
+
+- **Intall it!**:
+  ```bash
+  git clone https://github.com/LearnMoreStuff/MATH3
+- **Navigate to the directory**:
+  ```bash
+  cd MATH3
+- **Make the script executable**:
+ ```bash
+chmod +x math3.sh
+```
+- **Run the script**:
+```bash
+./math3.sh
+```
+**There you go! Now your all finished and ready to do you MATH! Make sure when your done give us a ⭐(star)!
+
 ## Changelog
 
 ### *Supported* Update MATH3 V1.0.5.5
