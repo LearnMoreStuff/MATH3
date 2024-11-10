@@ -4,8 +4,7 @@ We have just obtained the website [math-project.com](http://math-project.com)!
 
 > **This Repo needs more support. Please clone or download it!**
 
-This version of **MATH** is a work-in-progress, so feel free to test it out.
-
+**STAR** this repo if you like it!
 ---
 
 ## Changelog
