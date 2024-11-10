@@ -1,51 +1,75 @@
-# MATH3 Project (In Progress)
+<h1 align="center"><project-name></h1>
 
-**_We have just obtained the website [math-project.com](http://math-project.com)!_**
+<p align="center"><project-description></p>
 
-> **Support Needed:**  
-> This repo is still in development. Clone or download it to contribute and test!
+## Links
 
-## Getting Started
+- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
-This version of MATH3 is a work in progress. Feel free to test it out!
+- [Live](<Homepage url> "Live View")
 
-### Installation
+- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/Clo612/MATH3-Project-In-Progress.git
-Navigate to the Project Directory
+- [API](<API Link> "API")
 
-bash
-Copy code
-cd MATH3-Project-In-Progress
-Make the Script Executable
-Replace (the math type) with the specific type you want to use.
+## Screenshots
 
-bash
-Copy code
-chmod +x math3(the math type).sh
-Run the Script
+![Home Page](/screenshots/1.png "Home Page")
 
-bash
-Copy code
-./math3(the math type).sh
-Start Doing Math!
+![](/screenshots/2.png)
 
-Bash Notes
-No installation required! Bash is the default shell on most Linux systems.
-Make the script executable with chmod +x math3.sh and then run it using ./math3.sh.
-Changelog
-Version History
-MATH3 V1.0.5.5 (10/31/2024)
+![](/screenshots/3.png)
 
-Complete rewrite of scripts.
-Simplified functionality with a focus on addition.
-Beginning development on subtraction and multiplication features.
-MATH3 V1.0.5.4 (06/11/2024)
+## Available Commands
 
-Updated text content.
-Removed unnecessary text.
-MATH3 V1.0.5.3 (04/17/2024)
+In the project directory, you can run:
 
-Archived other programming languages to focus exclusively on Shell.
+### `npm start" : "react-scripts start"`,
+
+The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+### `"npm run build": "react-scripts build"`,
+
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
+
+### `"npm run test": "react-scripts test"`,
+
+Launches the test runner in the interactive watch mode.
+
+### `"npm run dev": "concurrently "nodemon server" "npm run start"`,
+
+For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
+
+### `"serve": "node server"`
+
+For running the server file on you can use this command.
+
+### `npm run serve`
+
+## Built With
+
+- JavaScript
+- Node
+- NPM
+- Webpack
+- HTML
+- CSS
+
+## Future Updates
+
+- [ ] Reliable Storage
+
+## Author
+
+**Rohit Jain**
+
+- [Profile](https://github.com/rohit19060 "Rohit jain")
+- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
+- [Website](https://kingtechnologies.in "Welcome")
+
+## 🤝 Support
+
+Contributions, issues, and feature requests are welcome!
+
+Give a ⭐️ if you like this project!
