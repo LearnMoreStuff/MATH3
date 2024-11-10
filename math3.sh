@@ -6,21 +6,21 @@ QUESTIONS=5
 CORRECT=0
 
 echo "Welcome to the MATH3!"
-echo "You will be asked $QUESTIONS addition questions with single-digit numbers."
+echo "You will be asked $QUESTIONS addition questions with double-digit numbers."
 
 # Loop for each question
 for ((i=1; i<=QUESTIONS; i++))
 do
     # Generate two random single-digit numbers (0-9)
-    num1=$(( RANDOM % 10 ))
-    num2=$(( RANDOM % 10 ))
+    num1=$(( RANDOM % 100 ))
+    num2=$(( RANDOM % 100 ))
 
     # Calculate the correct answer
     correct_answer=$(( num1 + num2 ))
 
     # Ask the question
-    echo -n "Question $i: What is $num1 + $num2? "
-    read user_answer
+    echo -n "Question $i:  What is $num1 + $num2? "
+    read -r user_answer
 
     # Check the user's answer
     if [ "$user_answer" -eq "$correct_answer" ]; then
