@@ -19,23 +19,13 @@ Run the script: ./math3.sh
 # Changlog
 
 *Supported* Update MATH3 V1.0.5.5 https://github.com/LearnMoreStuff/MATH3/releases/tag/V1.0.5.5
+Rewrote all of the scripts. Made it more simple and just addition. We will start working on Subtraction and Multiplication scripts.
+10/31/2024
 
 *Supported* Update MATH3 V1.0.5.4 https://github.com/Clo612/MATH3/releases/tag/V1.0.5.4
+Added some new text, and removed some unnessasary text.
+6/11/2024
 
-*Discontuied* Update MATH3 V1.0.5.3 https://github.com/Clo612/MATH3/releases/tag/1.0.5.3
-
-*Supported* Bash Update MATH3 V1.0.5.2 https://github.com/Clo612/MATH3/releases/tag/1.0.5.2
-
-*Supported* Bash Update MATH3 V1.0.5 https://github.com/Clo612/MATH3/releases/tag/D 
-
-**HUGE REALESE: MATH4 HAS BEEN REALESED https://github.com/Clo612/MATH4**
-
-*Discontuied* Hakcell Realese MATH3 V1.0.4 https://github.com/Clo612/MATH3/releases/tag/Hakcell1
-
-*Discontuied* Perl Realese MATH3 V1.0.3 https://github.com/Clo612/MATH3/releases/tag/Perl
-
-*Discontuied* JS, TS, and Swift Fix Realese V1.0.2 https://github.com/Clo612/MATH3/releases/tag/Fix
-
-*Discontuied* Added JS, Swift, and Java Realese V1.0.1 https://github.com/Clo612/MATH3/releases/tag/New
-
-*Discontuied* Added TS Realese V1.0.0 https://github.com/Clo612/MATH3/releases/tag/REALES
+*Supported* Update MATH3 V1.0.5.3 https://github.com/Clo612/MATH3/releases/tag/V1.0.5.3
+Removed/Archived all other types of Programming Laungage to focus on Shell.
+4/17/2024
