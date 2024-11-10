@@ -16,7 +16,9 @@ Make the script executable: chmod +x math3.sh
 Run the script: ./math3.sh
 
 
-# Realeses
+# Changlog
+
+*Supported* Update MATH3 V1.0.5.5 https://github.com/LearnMoreStuff/MATH3/releases/tag/V1.0.5.5
 
 *Supported* Update MATH3 V1.0.5.4 https://github.com/Clo612/MATH3/releases/tag/V1.0.5.4
 
