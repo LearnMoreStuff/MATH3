@@ -26,7 +26,7 @@ chmod +x math3.sh
 ```bash
 ./math3.sh
 ```
-**There you go! Now your all finished and ready to do you MATH! Make sure when your done give us a ⭐(star)!
+**There you go! Now your all finished and ready to do you MATH! Make sure when your done give us a ⭐(star)!**
 
 ## Changelog
 
